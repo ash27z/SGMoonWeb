@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="no-referrer">
+    <link rel="icon" type="image/png" href="/icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(103, 57, 88, 1) 0%, rgba(45, 8, 38, 1) 100%);
+            margin: 0;
+            background-size: cover;
+        }
+        * {
+            font-family: "Poppins", sans-serif;
+            color: #e9d9ed;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s, border-color 0.3s;
+        }
+        .navbar a.tournaments {
+            background-color: yellow;
+            color: black;
+        }
+        .navbar a.signup {
+            background-color: green;
+            color: black;
+        }
+        .navbar a.discord {
+            background-color: blue;
+            color: black;
+        }
+        .navbar a:hover {
+            transform: scale(1.1);
+            color: white;
+            background-color: transparent;
+            border-color: #e9d9ed;
+            animation: border-glow 5s infinite;
+        }
+        @keyframes border-glow {
+            0% { border-color: #e9d9ed; }
+            20% { border-color: #ff4f81; }
+            40% { border-color: #ffd700; }
+            60% { border-color: #4cff4d; }
+            80% { border-color: #4dffff; }
+            100% { border-color: #e9d9ed; }
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: calc(100vh - 48px);
+        }
+        .content {
+            border: 2px solid #e9d9ed;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: black;
+            animation: border-glow 5s infinite;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: -1.5px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            animation: color-change 5s infinite;
+        }
+        @keyframes color-change {
+            0% { color: #e9d9ed; }
+            20% { color: #ff4f81; }
+            40% { color: #ffd700; }
+            60% { color: #4cff4d; }
+            80% { color: #4dffff; }
+            100% { color: #e9d9ed; }
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+            font-weight: 300;
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <title>SGMoon Tournaments</title>
+</head>
+<body>
+    <div class="navbar">
+        <a class="tournaments" href="#tournaments">TOURNAMENTS</a>
+        <a class="signup" href="#signup">SIGN-UP</a>
+        <a class="discord" href="#discord">DISCORD</a>
+    </div>
+    <div class="center">
+        <div class="content">
+            <h1 id="header">SGMoon TOURNAMENTS</h1>
+            <div class="subtitle" id="subheader">By Ash & Zylo</div>
+        </div>
+    </div>
+</body>
+</html>
